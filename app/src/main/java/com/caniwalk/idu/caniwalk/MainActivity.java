@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import net.daum.mf.map.api.MapView;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 /**
  Create Date: 2018-08-20
  Created by: kil kyungwan
@@ -32,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         mapView();
     }
 
